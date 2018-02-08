@@ -1,0 +1,48 @@
+#+TITLE: Org Macro for GitLab
+#+AUTHOR: Dongsoo Lee
+#+EMAIL: dongsoolee8@gmail.com
+
+* Introduction
+
+Generate markup GitLab references like *issues*, *merge requests*, *labels*, etc.. on org-mode using macro.
+
+It works not on repository pages, but at the generated static pages(eg. GitHub Pages or GitLab Pages).
+
+This project provide macros of org-mode implemented by elisp functions.
+
+If you wondering how it works, [[https://docs.gitlab.com/ee/user/markdown.html#special-gitlab-references][see the special GitLab References for markdown.]]
+
+* Requires
+
+** emacs-lisp
+- =url-parse=
+
+* Macros
+All macro names are based on special GitLab references.
+
+Basically, the macro is named with a prefix *GITLAB_* for preventing confliction with your existing macros of org-mode docs.
+
+If you don't want to verbose macro names, please change the macro name in =org-macro-gitlab.setup= file.
+
+** with Names
+- GITLAB_INIT(string url) : Initialize to your repository with full url(for supports hosted GitLab users). It should be called before execution of another macros.
+- GITLAB_USER
+- GITLAB_GROUP
+- GITLAB_ALL
+- GITLAB_ISSUE
+- GITLAB_MERGE
+- GITLAB_SNIPPET
+- GITLAB_EPIC
+- GITLAB_LABEL
+- GITLAB_MILESTONE
+- GITLAB_COMMIT
+- GITLAB_LINK
+
+** with Symbols
+- @ : aliases of GITLAB_USER, GITLAB_GROUP, GITLAB_ALL
+- # : alias of GITLAB_ISSUE
+- ! : alias of GITLAB_MERGE
+- $ : alias of GITLAB_SNIPPET
+- & : alias of GITLAB_EPIC
+- ~ : alias of GITLAB_LABEL
+- % : alias of GITLAB_MILESTONE
