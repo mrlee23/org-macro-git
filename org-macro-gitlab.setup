@@ -1,0 +1,22 @@
+# -*- mode: org; -*-
+
+#+MACRO: GITLAB_INIT (eval (org-macro-gitlab-init "$1"))
+#+MACRO: GITLAB_USER (eval (org-macro-gitlab-name "$1"))
+#+MACRO: GITLAB_GROUP (eval (org-macro-gitlab-name "$1"))
+#+MACRO: GITLAB_ALL (eval (org-macro-gitlab-name "all"))
+#+MACRO: GITLAB_ISSUE (eval (org-macro-gitlab-issue "$1"))
+#+MACRO: GITLAB_MERGE (eval (org-macro-gitlab-merge "$1"))
+#+MACRO: GITLAB_SNIPPET (eval (org-macro-gitlab-snippet "$1"))
+#+MACRO: GITLAB_EPIC (eval (org-macro-gitlab-epic "$1"))
+#+MACRO: GITLAB_LABEL (eval (org-macro-gitlab-label "$1"))
+#+MACRO: GITLAB_MILESTONE (eval (org-macro-gitlab-milestone "$1"))
+#+MACRO: GITLAB_COMMIT (eval (org-macro-gitlab-commit "$1"))
+#+MACRO: GITLAB_LINK (eval (org-macro-gitlab-link "$1"))
+
+#+MACRO: @ (eval (org-macro-gitlab-name "$1"))
+#+MACRO: # (eval (org-macro-gitlab-issue "$1"))
+#+MACRO: ! (eval (org-macro-gitlab-merge "$1"))
+#+MACRO: $ (eval (org-macro-gitlab-snippet "$1"))
+#+MACRO: & (eval (org-macro-gitlab-epic "$1"))
+#+MACRO: ~ (eval (org-macro-gitlab-label "$1"))
+#+MACRO: % (eval (org-macro-gitlab-milestone "$1"))
