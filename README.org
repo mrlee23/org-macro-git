@@ -12,10 +12,14 @@ This project provide macros of org-mode implemented by elisp functions.
 
 If you wondering how it works, [[https://docs.gitlab.com/ee/user/markdown.html#special-gitlab-references][see the special GitLab References for markdown.]]
 
+* Repositories
+- [[https://github.com/mrlee23/org-macro-gitlab][on GitHub]]
+- [[https://gitlab.com/mrlee23/org-macro-gitlab][on GitLab]]
+
 * Requires
 
 ** emacs-lisp
-- =url-parse=
+- [[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url-parse.el][url-parse]]
 
 * Macros
 All macro names are based on special GitLab references.
